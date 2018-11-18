@@ -1,3 +1,2 @@
-# todos
-express and angular application for keeping track of todos
-website under construction
+# RealTimeTodo
+web application built using MEAN technolgy,socketio,redis and hosted on aws for keeping track of todos
