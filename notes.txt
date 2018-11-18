@@ -1,0 +1,2 @@
+1]if the token is already used it will NOT be redirected to
+password reset page instead will go to login page
