@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="jumbotron">
+    <h1 class="display-4">Hello,{{ username }}</h1>
+    <p>Private todolist is visible only to you.Public todolist is visible to all your Friends</p>
+
+    <span>public todolist </span><button mat-fab color="warn"
+     routerLink="/multi" routerLinkActive="active" >Public</button><br><br>
+    <span>private todolist </span><button mat-fab color="primary"
+     routerLink="/single" routerLinkActive="active" >Private</button>
+
+  </div>

@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<div class="texty">
+
+  <div  class="container" *ngFor = "let message of messages">
+    {{message.text}} on {{message.createdOn | date:'medium'}}
+    <hr>
+  </div>
+</div>

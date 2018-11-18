@@ -1,0 +1,47 @@
+.mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .mycard{
+    display: flex;
+      flex-wrap: wrap;
+  
+  }
+  .mat-icon {
+      cursor: pointer;
+  
+  }
+  ul li {
+      cursor: pointer;
+      list-style-type: none;
+      font-size: 16px;
+  }
+  .sub .mat-icon{
+    display: none;
+  }
+  .sub:hover .mat-icon{
+    display: inline-block;
+  }
+  .example-card {
+    max-width: 400px;
+    padding: 20px;
+    margin: 50px;
+  }
+  .example-full-width {
+    width: 100%;
+  }
+  .example-radio-group {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  
+  .example-selected-value {
+    margin: 15px 0;
+  }
+  .mat-radio-button ~ .mat-radio-button {
+    padding-right: 16px;
+  }
+  

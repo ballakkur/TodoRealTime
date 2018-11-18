@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+  <mat-card class="example-card" *ngFor="let user of users">
+    <mat-card-header (click)="gotoView(user.userId)">
+      <mat-card-title class="pointer"> {{user.userName}} </mat-card-title>
+      <mat-card-subtitle>{{user.userId}}</mat-card-subtitle>
+      <!--  <div *ngFor ="let friend of myDetail.friends">
+        {{friend.userId}}
+      </div> -->
+    </mat-card-header>
+    <mat-card-content *ngFor="let req of reqs; i as index">
+      <div *ngIf="req.senderId === user.userId ">shall we be friends?
+        <button (click)="accept(req.senderId,i)" mat-button>yes</button>
+        <button (click)="reject(req.senderId,i)" mat-button>no</button>
+      </div>
+
+    </mat-card-content>
+    <div *ngFor="let friend of myDetail.friends;i as index">
+      <p *ngIf="friend.userId == user.userId"> we are friends :))
+        &nbsp;
+          <button (click)="removeFriend(user.userId,i)" mat-mini-fab>x</button>
+
+    </p>
+    </div>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="sendRequest(user.userId)">send Request</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

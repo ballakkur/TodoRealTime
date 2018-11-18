@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">Todo
+    <span class="b-spacer"></span>
+  <button mat-raised-button *ngIf = "router.url=='/multi'" routerLink="/friends" routerLinkActive="active" >Friends</button>  
+  &nbsp;
+  <button mat-raised-button *ngIf = "router.url=='/multi'" routerLink="/notification" routerLinkActive="active" >Notification</button>  
+  &nbsp;
+  <button mat-raised-button (click)="logout()">Logout</button>  
+</mat-toolbar>
